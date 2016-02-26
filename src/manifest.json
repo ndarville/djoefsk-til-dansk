@@ -11,15 +11,16 @@
   },
 
   "author": "Niclas Darville",
+  "homepage_url": "https://github.com/ndarville/djoefsk-til-dansk",
+
   "content_scripts": [
     {
-        "matches": [
-          "http://*.dk/*",
-          "https://*.dk/*"
-        ],
-        "js": ["content.js"],
-        "run_at": "document_end"
+      "matches": [
+        "http://*.dk/*",
+        "https://*.dk/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
     }
-  ],
-  "homepage_url": "https://github.com/ndarville/djoefsk-til-dansk"
+  ]
 }
