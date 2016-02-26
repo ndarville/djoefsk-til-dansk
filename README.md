@@ -14,7 +14,7 @@ Installation
 
 ~ <https://robots.thoughtbot.com/how-to-make-a-chrome-extension>
 
-You can also just drag and drop the `.crx` file to your extensions page.
+You can also just drag and drop the [`.crx`][crx] file to your extensions page.
 
 Thanks
 ------
@@ -56,6 +56,7 @@ License
 [Do whatever][license]. The majority of the code for this project is from “Millennials to Snake People”, so who am I to tell you what to do with the source code.
 
 
+[crx]: https://github.com/ndarville/djoefsk-til-dansk/blob/master/djoefsk-til-dansk.crx
 [9to5]: http://9to5google.com/2015/06/14/how-to-make-a-chrome-extensions/amp/
 [snake-chrome]: https://github.com/ericwbailey/millennials-to-snake-people
 [permissions]: https://github.com/ndarville/djoefsk-til-dansk/blob/master/src/manifest.json#L16-L29
