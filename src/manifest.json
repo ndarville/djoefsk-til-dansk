@@ -22,5 +22,9 @@
       "js": ["content.js"],
       "run_at": "document_end"
     }
+  ],
+  "permissions": [
+    "http://*.dk/*",
+    "https://*.dk/*"
   ]
 }

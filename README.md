@@ -21,6 +21,34 @@ This extension would not be possible without:
 * [“How-to: Make your own text-replacing Chrome extension like ‘Millennials to Snake People’”][9to5]
 * [Eric Bailey’s “Millennials to Snake People” (for Chrome)][snake-chrome]
 
+Uh, what’s up with the permissions this extension needs?
+--------------------------------------------------------
+“Read and change all your data on the websites you visit” sounds super, super ominous, but this reflects that:
+
+* The extension ”reads“ the page to look for words to replace.
+* It only applies to `.dk` domains, which isn’t reflected in the prompt.
+
+If you inspect `manifest.json`, you can see which websites the extension reads in this [section][permissions]:
+
+```js
+"content_scripts": [
+  {
+    "matches": [
+      "http://*.dk/*",
+      "https://*.dk/*"
+    ],
+    "js": ["content.js"],
+    "run_at": "document_end"
+  }
+],
+"permissions": [
+  "http://*.dk/*",
+  "https://*.dk/*"
+]
+```
+
+All the code is available here, so you
+
 License
 -------
 [Do whatever][license]. The majority of the code for this project is from “Millennials to Snake People”, so who am I to tell you what to do with the source code.
@@ -28,4 +56,5 @@ License
 
 [9to5]: http://9to5google.com/2015/06/14/how-to-make-a-chrome-extensions/amp/
 [snake-chrome]: https://github.com/ericwbailey/millennials-to-snake-people
+[permissions]: https://github.com/ndarville/djoefsk-til-dansk/blob/master/src/manifest.json#L16-L29
 [license]: https://github.com/ndarville/djoefsk-til-dansk/blob/master/LICENSE.md
