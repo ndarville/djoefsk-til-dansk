@@ -1,6 +1,6 @@
 DJØFsk til Dansk
 ================
-[Only Danish part of the README:] “Omprioritering”, “budgetforbedring”,“effektivisering”, “normalisering”, “oprydning”, “servicetjek”, “spareøvelse”, “eftersyn”. Der er lige så mange sjove måder at sige **“nedskæring”** på.
+[Only Danish part of the README:] “Omprioritering”, “budgetforbedring”,“effektivisering”, “normalisering”, “oprydning”, “servicetjek”, “spareøvelse”, “eftersyn”. Der er mange sjove måder at sige **“nedskæring”** på.
 
 Denne Chrome-udvidelse kalder en spade for en spade, så der ikke går noget tabt for dem, som ikke taler flydende DJØFsk.
 
