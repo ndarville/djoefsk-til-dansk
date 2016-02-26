@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "DJØFsk til Dansk",
+  "version": "0.1",
+
+  "description": "Oversæt politikersprog til dansk",
+  "icons": {
+    "16"  : "icons/16x16.png",
+    "48"  : "icons/48x48.png",
+    "128" : "icons/128x128.png"
+  },
+
+  "author": "Niclas Darville",
+  "content_scripts": [
+    {
+        "matches": [
+          "http://*.dk/*",
+          "https://*.dk/*"
+        ],
+        "js": ["content.js"],
+        "run_at": "document_end"
+    }
+  ],
+  "homepage_url": "https://github.com/ndarville/djoefsk-til-dansk"
+}
