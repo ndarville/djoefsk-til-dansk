@@ -10,11 +10,17 @@ I første omgang omfatter projektet kun synonymer for nedskæring, men det kan v
 
 Installation
 ------------
+[Download from Chrome Web Store][download]
+
+or
+
 > To load your extension in Chrome, open up `chrome://extensions/` in your browser and click “Developer mode” in the top right. Now click “Load unpacked extension…” and select the extension’s directory (`src/`, nd). You should now see your extension in the list.
 >
 > When you change or add code in your extension, just come back to this page and reload the page. Chrome will reload your extension.
 
 ~ <https://robots.thoughtbot.com/how-to-make-a-chrome-extension>
+
+or
 
 You can also just drag and drop the [`.crx`][crx] file to your extensions page.
 
@@ -59,6 +65,7 @@ License
 
 
 [screenshot]: https://github.com/ndarville/djoefsk-til-dansk/blob/master/screenshot.png
+[download]: https://chrome.google.com/webstore/detail/dj%C3%B8fsk-til-dansk/pojogepbaiiloieahegjkdidnihjeaph?authuser=1
 [crx]: https://github.com/ndarville/djoefsk-til-dansk/blob/master/djoefsk-til-dansk.crx
 [9to5]: http://9to5google.com/2015/06/14/how-to-make-a-chrome-extensions/amp/
 [snake-chrome]: https://github.com/ericwbailey/millennials-to-snake-people
