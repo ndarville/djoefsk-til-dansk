@@ -1,5 +1,7 @@
 DJØFsk til Dansk
 ================
+![Screenshot][]
+
 [Only Danish part of the README:] “Omprioritering”, “budgetforbedring”,“effektivisering”, “normalisering”, “oprydning”, “servicetjek”, “spareøvelse”, “eftersyn”. Der er mange sjove måder at sige **“nedskæring”** på.
 
 Denne Chrome-udvidelse kalder en spade for en spade, så der ikke går noget tabt for dem, som ikke taler flydende DJØFsk.
@@ -56,6 +58,7 @@ License
 [Do whatever][license]. The majority of the code for this project is from “Millennials to Snake People”, so who am I to tell you what to do with the source code.
 
 
+[screenshot]: https://github.com/ndarville/djoefsk-til-dansk/blob/master/screenshot.png
 [crx]: https://github.com/ndarville/djoefsk-til-dansk/blob/master/djoefsk-til-dansk.crx
 [9to5]: http://9to5google.com/2015/06/14/how-to-make-a-chrome-extensions/amp/
 [snake-chrome]: https://github.com/ericwbailey/millennials-to-snake-people
