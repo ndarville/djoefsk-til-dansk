@@ -25,6 +25,7 @@ function replaceText(v) {
     var verbLo = "beskære", // Infinitive
         verbHi = "Beskære", // Infinitive
         verbPerfLo = "beskåret",
+        verbPerfHi = "Beskåret",
         nounLo = "nedskæring",
         nounHi = "Nedskæring",
         uberNounLo = "dummebøde",
@@ -38,6 +39,7 @@ function replaceText(v) {
     v = v.replace(/\beffektivisering\b/g, nounLo);
     v = v.replace(/\bEffektivisering\b/g, nounHi);
     v = v.replace(/\beffektiviseret\b/g, verbPerfLo);
+    v = v.replace(/\bEffektiviseret\b/g, verbPerfHi);
     v = v.replace(/\beffektivisere\b/g, verbLo);
     v = v.replace(/\bEffektivisere\b/g, verbHi);
 
@@ -54,6 +56,7 @@ function replaceText(v) {
     v = v.replace(/\bomprioritering\b/g, nounLo);
     v = v.replace(/\bOmprioritering\b/g, nounHi);
     v = v.replace(/\bomprioriteret\b/g, verbPerLo);
+    v = v.replace(/\bOmprioriteret\b/g, verbPerHi);
     v = v.replace(/\bomprioritere\b/g, verbLo);
     v = v.replace(/\bOmprioritere\b/g, verbHi);
 
@@ -65,6 +68,7 @@ function replaceText(v) {
     v = v.replace(/\bnormalisering\b/g, nounLo);
     v = v.replace(/\bNormalisering\b/g, nounHi);
     v = v.replace(/\bnormaliseret\b/g, verbPerfLo);
+    v = v.replace(/\bNormaliseret\b/g, verbPerfHi);
     v = v.replace(/\bnormalisere\b/g, verbLo);
     v = v.replace(/\bNormalisere\b/g, verbHi);
 
