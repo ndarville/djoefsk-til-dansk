@@ -6,7 +6,7 @@ DJØFsk til Dansk
 
 Denne Chrome-udvidelse kalder en spade for en spade, så der ikke går noget tabt for dem, som ikke taler flydende DJØFsk.
 
-I første omgang omfatter projektet kun synonymer for nedskæring, men det kan være, projektets ambitioner i takt med ordflommen.
+I første omgang omfatter projektet kun synonymer for nedskæring, men det kan være, projektets ambitioner vokser i takt med ordflommen.
 
 Installation
 ------------
