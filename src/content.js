@@ -22,14 +22,30 @@ function handleText(textNode) {
 }
 
 function replaceText(v) {
-    var verbLo = "beskære", // Infinitive
-        verbHi = "Beskære", // Infinitive
+/** TODO
+    * Doesn't work with compound words eg "effektiviseringsforslag"
+    * (:?en\b|ens\b|er\b|ers\b|erne\b|ernes\b)
+ */
+    var verbLo = "beskære",
+        verbHi = "Beskære",
         verbPerfLo = "beskåret",
-        verbPerfHi = "Beskåret",
-        nounLo = "nedskæring",
+        verbPerfHi = "Beskåret";
+
+    var nounLo = "nedskæring", // -en/-erne
         nounHi = "Nedskæring",
-        uberNounLo = "dummebøde",
-        uberNounHi = "Dummebøde";
+        nounPlLo = "nedskæringer",
+        nounPlHi = "Nedskæringer",
+        nounDefSgLo = "nedskæringen",
+        nounDefSgHi = "Nedskæringen",
+        nounDefPlLo = "nedskæringerne",
+        nounDefPlHi = "Nedskæringerne";
+
+    var uberNounLo = "dummebøde", // -en/-erne
+        uberNounHi = "Dummebøde",
+        uberNounDefSgLo = "dummebøden",
+        uberNounDefSgHi = "Dummebøden",
+        uberNounDefPlLo = "dummebøderne",
+        uberNounDefPlHi = "Dummebøderne";
 
     // Budgetforbedring
     v = v.replace(/\bbudgetforbedring\b/g, nounLo);
@@ -38,23 +54,39 @@ function replaceText(v) {
     // Effektivisering
     v = v.replace(/\beffektivisering\b/g, nounLo);
     v = v.replace(/\bEffektivisering\b/g, nounHi);
+
     v = v.replace(/\beffektiviseret\b/g, verbPerfLo);
     v = v.replace(/\bEffektiviseret\b/g, verbPerfHi);
     v = v.replace(/\beffektivisere\b/g, verbLo);
     v = v.replace(/\bEffektivisere\b/g, verbHi);
 
-    // Eftersyn
-    v = v.replace(/\bserviceeftersyn\b/g, nounLo); // Place before `eftersyn`
-    v = v.replace(/\bServiceftersyn\b/g, nounHi); // Place before `eftersyn`
+    // Eftersyn (-et/-ene)
+    v = v.replace(/\bserviceeftersynet\b/g, nounDefSgLo);
+    v = v.replace(/\bServiceeftersynet\b/g, nounDefSgHi);
+    v = v.replace(/\bserviceeftersynene\b/g, nounDefPlLo);
+    v = v.replace(/\bServiceeftersynene\b/g, nounDefPlHi);
+    v = v.replace(/\bserviceeftersyn\b/g, nounLo);
+    v = v.replace(/\bServiceeftersyn\b/g, nounHi);
+
+    v = v.replace(/\beftersynet\b/g, nounDefSgLo);
+    v = v.replace(/\bEftersynet\b/g, nounDefSgHi);
+    v = v.replace(/\beftersynene\b/g, nounDefPlLo);
+    v = v.replace(/\bEftersynene\b/g, nounDefPlHi);
     v = v.replace(/\beftersyn\b/g, nounLo);
     v = v.replace(/\bEftersyn\b/g, nounHi);
 
-    // Omprioritering
+    // Omprioriteringsbidrag (-et/-ene)
+    v = v.replace(/\bomprioriteringsbidraget\b/g, uberNounDefSgLo);
+    v = v.replace(/\bOmprioriteringsbidraget\b/g, uberNounDefSgHi);
+    v = v.replace(/\bomprioriteringsbidragene\b/g, uberNounDefPlLo);
+    v = v.replace(/\bOmprioriteringsbidragene\b/g, uberNounDefPlHi);
     v = v.replace(/\bomprioriteringsbidrag\b/g, uberNounLo);
     v = v.replace(/\bOmprioriteringsbidrag\b/g, uberNounHi);
 
+    // Omprioritering
     v = v.replace(/\bomprioritering\b/g, nounLo);
     v = v.replace(/\bOmprioritering\b/g, nounHi);
+
     v = v.replace(/\bomprioriteret\b/g, verbPerfLo);
     v = v.replace(/\bOmprioriteret\b/g, verbPerfHi);
     v = v.replace(/\bomprioritere\b/g, verbLo);
@@ -67,12 +99,15 @@ function replaceText(v) {
     // Normalisering
     v = v.replace(/\bnormalisering\b/g, nounLo);
     v = v.replace(/\bNormalisering\b/g, nounHi);
+
     v = v.replace(/\bnormaliseret\b/g, verbPerfLo);
     v = v.replace(/\bNormaliseret\b/g, verbPerfHi);
     v = v.replace(/\bnormalisere\b/g, verbLo);
     v = v.replace(/\bNormalisere\b/g, verbHi);
 
-    // Servicetjek
+    // Servicetjek (-ket)
+    v = v.replace(/\bservicetjekket\b/g, nounDefSgLo);
+    v = v.replace(/\bServicetjekket\b/g, nounDefSgHi);
     v = v.replace(/\bservicetjek\b/g, nounLo);
     v = v.replace(/\bServicetjek\b/g, nounHi);
 
