@@ -36,12 +36,8 @@ function replaceText(v) {
         nounDefPlLo = "nedskæringerne",
         nounDefPlHi = "Nedskæringerne";
 
-    var uberNounLo = "dummebøde", // -en/-erne
-        uberNounHi = "Dummebøde",
-        uberNounDefSgLo = "dummebøden",
-        uberNounDefSgHi = "Dummebøden",
-        uberNounDefPlLo = "dummebøderne",
-        uberNounDefPlHi = "Dummebøderne";
+    var uberNounLo = "kommunalnedskæringsbeløb", // -et/-ene
+        uberNounHi = "Kommunalnedskæringsbeløb";
 
     // Budgetforbedring
     v = v.replace(/\bbudgetforbedring/g, nounLo);
@@ -72,12 +68,8 @@ function replaceText(v) {
     v = v.replace(/\bEftersyn\b/g, nounHi);
 
     // Omprioriteringsbidrag (-et/-ene)
-    v = v.replace(/\bomprioriteringsbidraget\b/g, uberNounDefSgLo);
-    v = v.replace(/\bOmprioriteringsbidraget\b/g, uberNounDefSgHi);
-    v = v.replace(/\bomprioriteringsbidragene\b/g, uberNounDefPlLo);
-    v = v.replace(/\bOmprioriteringsbidragene\b/g, uberNounDefPlHi);
-    v = v.replace(/\bomprioriteringsbidrag\b/g, uberNounLo);
-    v = v.replace(/\bOmprioriteringsbidrag\b/g, uberNounHi);
+    v = v.replace(/\bomprioriteringsbidrag/g, uberNounLo);
+    v = v.replace(/\bOmprioriteringsbidrag/g, uberNounHi);
 
     // Omprioritering
     v = v.replace(/\bomprioritering/g, nounLo);
