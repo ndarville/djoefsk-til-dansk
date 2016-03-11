@@ -1,4 +1,4 @@
-DJØFsk til Dansk
+DJØFsk til Dansk ![Project version][]
 ================
 ![Screenshot][]
 
@@ -64,6 +64,7 @@ License
 [Do whatever][license]. The majority of the code for this project is from “Millennials to Snake People”, so who am I to tell you what to do with the source code.
 
 
+[project version]: https://img.shields.io/github/release/ndarville/djoefsk-til-dansk.svg
 [screenshot]: https://github.com/ndarville/djoefsk-til-dansk/blob/master/screenshot.png
 [download]: https://chrome.google.com/webstore/detail/dj%C3%B8fsk-til-dansk/pojogepbaiiloieahegjkdidnihjeaph?authuser=1
 [crx]: https://github.com/ndarville/djoefsk-til-dansk/blob/master/djoefsk-til-dansk.crx
