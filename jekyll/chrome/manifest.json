@@ -1,0 +1,23 @@
+---
+---
+{% capture pattern %}{% for p in site.pattern %}{{ p | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endcapture %}
+{
+  "manifest_version": 2,
+  "name": {{ site.name | jsonify }},
+  "version": {{ site.version | jsonify }},
+
+  "description": {{ site.description | jsonify }},
+  "icons": {{ site.icons.chrome | jsonify }},
+
+  "author": {{ site.author | jsonify}},
+  "homepage_url": {{ site.url | jsonify}},
+
+  "content_scripts": [
+    {
+      "matches": [{{ pattern }}],
+      "js": [{{ site.script | jsonify }}],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [{{ pattern }}]
+}
