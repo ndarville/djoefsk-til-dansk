@@ -38,10 +38,18 @@ function replaceText(v) {
 
     var uberNounLo = "kommunalnedskæringsbeløb", // -et/-ene
         uberNounHi = "Kommunalnedskæringsbeløb";
+        uberDefNounLo = "kommunalnedskæringsbeløbet",
+        uberDefNounHi = "Kommunalnedskæringsbeløbet";
 
     // Budgetforbedring
     v = v.replace(/\bbudgetforbedring/g, nounLo);
     v = v.replace(/\bBudgetforbedring/g, nounHi);
+
+    // Moderniserings- og effektiviseringsprogram (-met)
+    v = v.replace(/\b(moderniserings- og effektiviseringsprogrammet)/g, uberDefNounLo);
+    v = v.replace(/\b(Moderniserings- og effektiviseringsprogrammet)/g, uberDefNounHi);
+    v = v.replace(/\b(moderniserings- og effektiviseringsprogram)/g, uberNounLo);
+    v = v.replace(/\b(Moderniserings- og effektiviseringsprogram)/g, uberNounHi);
 
     // Effektivisering
     v = v.replace(/\beffektivisering/g, nounLo);
@@ -51,6 +59,15 @@ function replaceText(v) {
     v = v.replace(/\bEffektiviseret\b/g, verbPerfHi);
     v = v.replace(/\beffektivisere/g, verbLo);
     v = v.replace(/\bEffektivisere/g, verbHi);
+
+    // Modernisering
+    v = v.replace(/\bmodernisering/g, nounLo);
+    v = v.replace(/\bModernisering/g, nounHi);
+
+    v = v.replace(/\bmoderniseret\b/g, verbPerfLo);
+    v = v.replace(/\bModerniseret\b/g, verbPerfHi);
+    v = v.replace(/\bmodernisere/g, verbLo);
+    v = v.replace(/\bModernisere/g, verbHi);
 
     // Eftersyn (-et/-ene)
     v = v.replace(/\bserviceeftersynet\b/g, nounDefSgLo);
@@ -102,6 +119,10 @@ function replaceText(v) {
     // Spareøvelse
     v = v.replace(/\bspareøvelse/g, nounLo);
     v = v.replace(/\bSpareøvelse/g, nounHi);
+
+    // Minusvækst (-?)
+    v = v.replace(/\bminusvækst/g, nounLo);
+    v = v.replace(/\bMinusvækst/g, nounHi);
 
     return v;
 }
