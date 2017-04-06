@@ -41,6 +41,8 @@ function replaceText(v) {
         uberDefNounLo = "kommunalnedskæringsbeløbet",
         uberDefNounHi = "Kommunalnedskæringsbeløbet";
 
+    var coiNounHi = "Center for Offentlig Nedskæring";
+
     // Budgetforbedring
     v = v.replace(/\bbudgetforbedring/g, nounLo);
     v = v.replace(/\bBudgetforbedring/g, nounHi);
@@ -123,6 +125,9 @@ function replaceText(v) {
     // Minusvækst (-?)
     v = v.replace(/\bminusvækst/g, nounLo);
     v = v.replace(/\bMinusvækst/g, nounHi);
+
+    // Center for Offentlig Innovation (COI)
+    v = v.replace(/\bCenter for Offentlig Innovation/g, coiNounHi;
 
     return v;
 }
