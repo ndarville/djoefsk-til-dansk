@@ -1,4 +1,4 @@
-DJØFsk til Dansk ![Project version][]
+DJØFsk til Dansk ![Project version][] ![Travis build status][]
 ================
 ![Screenshot][]
 
@@ -65,6 +65,7 @@ License
 
 
 [project version]: https://img.shields.io/github/release/ndarville/djoefsk-til-dansk.svg
+[travis build status]: https://travis-ci.org/ndarville/djoefsk-til-dansk.svg?branch=master
 [screenshot]: https://github.com/ndarville/djoefsk-til-dansk/blob/master/screenshot.png
 [download]: https://chrome.google.com/webstore/detail/dj%C3%B8fsk-til-dansk/pojogepbaiiloieahegjkdidnihjeaph?authuser=1
 [crx]: https://github.com/ndarville/djoefsk-til-dansk/blob/master/djoefsk-til-dansk.crx
