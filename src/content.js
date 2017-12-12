@@ -127,7 +127,7 @@ function replaceText(v) {
     v = v.replace(/\bMinusvækst/g, nounHi);
 
     // Center for Offentlig Innovation (COI)
-    v = v.replace(/\bCenter for Offentlig Innovation/g, coiNounHi;
+    v = v.replace(/\bCenter for Offentlig Innovation/g, coiNounHi);
 
     return v;
 }
